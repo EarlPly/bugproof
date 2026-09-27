@@ -1,24 +1,14 @@
-# IBM Bob session evidence
+# Authentic IBM Bob session evidence
 
-This folder must contain genuine screenshots of every relevant Bob IDE task-session consumption summary. A README, task identifier, or copied transcript is not a screenshot substitute.
+These unaltered PNGs capture the actual Bob IDE sessions used in BugProof.
 
-## Observed core task
+| Task | ID | Observed Bobcoins | Summary |
+|---|---|---:|---|
+| Inventory investigation, regression tests and repair | `d24c4d88e3bed318d7f0048bc3c14824` | 0.872 | [Summary](earl_2026-09-26_inventory-repair-summary.png) |
+| Interactive replay logic and boundary explanations | `377671b5fbd7b5b820d8cafa987dcb53` | 1.39 | [Summary](earl_2026-09-27_replay-summary.png) |
 
-| Field | Recorded value |
-|---|---|
-| Task ID | `d24c4d88e3bed318d7f0048bc3c14824` |
-| Observed consumption | **0.872 Bobcoins** |
-| Work | Inventory investigation, preserved original fixture, regression and boundary tests, repair, and verification |
-| Supporting record | [Bob investigation](../docs/bob-investigation.md) |
+The observed task totals sum to approximately 2.262 Bobcoins. This is not a fresh account balance. The second task includes review and correction of JavaScript coercion explanations, with 21 focused tests passing. The viewport frames the task metadata without exposing local runtime paths. No screenshot content has been edited.
 
-The identifier and cost above were observed in the actual Bob session. They do not establish that its required screenshot has been saved. No screenshot is fabricated by this project.
+See [inventory results](earl_2026-09-26_inventory-repair-results.png), [inventory investigation](../docs/bob-investigation.md), and [replay review](../docs/bob-replay-review.md). Website, HTTP boundary, evidence tooling, final review and submission materials were developed with Codex. Bob was the core development tool for the domain repair and replay explanation, not a live service called by the website.
 
-## Capture the required summary
-
-1. In Bob IDE, open **Tasks** and select the relevant task in the BugProof workspace.
-2. Select the task header to display its session consumption summary.
-3. Capture that actual summary and save a legible **PNG** here, for example `bugproof_task01_inventory_repair_summary.png`.
-4. Repeat for all relevant project tasks from each participant; use the task list's **All** view if the work spans multiple workspaces.
-5. Check the images for exposed credentials or unnecessary account information, then run `pnpm evidence` to refresh the report's screenshot references.
-
-Use the [official IBM screenshot instructions](https://lablab-ibm-bob-2-hackathon-guide.s3.us.cloud-object-storage.appdomain.cloud/index.html). Capture real evidence without recreating the interface or changing reported consumption.
+Every additional participant must include their own relevant task summaries. Follow the [official guide](https://lablab-ibm-bob-2-hackathon-guide.s3.us.cloud-object-storage.appdomain.cloud/index.html).

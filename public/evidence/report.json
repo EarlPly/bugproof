@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T01:14:47.409Z",
+  "generatedAt": "2026-09-27T12:52:32.061Z",
   "source": {
-    "revision": null,
-    "sourceHash": "2f1270b2866255d4e86982fd0243b26ff392d6dc327ee40eb4516a568a88936c",
+    "revision": "ce7b2832d314a94c045772da0dd1972403cd7f94",
+    "sourceHash": "2eedb65b84e0f580747ccc89669e97817f350098b0b5d570b3df8f7c98b5fb95",
     "dirty": true
   },
   "scenario": {
@@ -287,15 +287,16 @@
   ],
   "testRun": {
     "command": "vitest run --reporter=json",
-    "passed": 36,
+    "passed": 74,
     "failed": 0,
-    "durationMs": 858
+    "durationMs": 558
   },
   "provenance": {
-    "bobContribution": "Bob IDE authored the inventory investigation, regression tests, and repair. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
+    "bobContribution": "Bob IDE authored the inventory investigation, regression tests, repair, and explanatory replay logic with boundary tests. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
     "sessionEvidence": [
       "bob_sessions/earl_2026-09-26_inventory-repair-results.png",
-      "bob_sessions/earl_2026-09-26_inventory-repair-summary.png"
+      "bob_sessions/earl_2026-09-26_inventory-repair-summary.png",
+      "bob_sessions/earl_2026-09-27_replay-summary.png"
     ],
     "limitations": [
       "Synthetic, intentionally seeded inventory defect; each demonstration starts with five units.",

@@ -50,5 +50,5 @@ export function restoreCase(value:unknown):CaseState|null {
   const title=v.title.slice(0,100),description=v.description.slice(0,1000),rawQuantity=v.rawQuantity.slice(0,120);
   let validQuantity=false;
   try {parseQuantity(rawQuantity);validQuantity=true;} catch {}
-  return {...newCase(v.missionId,[...new Set(v.completedMissions.filter(x=>typeof x==='string'&&missions.some(m=>m.id===x)))]),title,description,rawQuantity,reportSaved:v.reportSaved===true&&validQuantity&&Boolean(title.trim())&&Boolean(description.trim())};
+  return {...newCase(v.missionId,[...new Set(v.completedMissions.filter(x=>typeof x==='string'&&missions.some(m=>m.id===x)))]),title,description,rawQuantity,reportSaved:v.reportSaved===true&&validQuantity&&title.trim().length>=3&&description.trim().length>=10};
 }

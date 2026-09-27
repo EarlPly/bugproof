@@ -1,6 +1,6 @@
 # BugProof submission checklist
 
-Status snapshot: September 26, 2026. Checked boxes describe observed completed work. Publication, media, and submission items remain open until their actual results are verified.
+Status snapshot: September 27, 2026. Checked boxes describe observed completed work. Publication, media, and submission items remain open until their actual results are verified.
 
 ## Working prototype and attribution
 
@@ -9,24 +9,24 @@ Status snapshot: September 26, 2026. Checked boxes describe observed completed w
 - [x] Real verification reports include outcomes, source fingerprint, and measured test-run duration.
 - [x] Bob's actual domain/test/repair contribution is distinguished from assistant-authored website and tooling.
 - [x] MIT license added for original project code.
-- [ ] Complete final production build and browser checks after all changes.
+- [x] Complete final production build and browser checks after all changes.
 - [ ] Check final repository for credentials, private paths, prohibited data, and dependency/asset licensing.
-- [ ] Regenerate evidence after final source changes and after session screenshots are added.
+- [x] Regenerate evidence after final source changes and after session screenshots are added.
 
 ## Bob evidence
 
 - [x] Core Bob task recorded: `d24c4d88e3bed318d7f0048bc3c14824`; observed cost **0.872 Bobcoins**.
-- [ ] Save the genuine core-task consumption-summary screenshot in `bob_sessions/`.
+- [x] Save the genuine core-task consumption-summary screenshot in `bob_sessions/`.
 - [ ] Include every participant's other relevant task-summary screenshots, if any.
-- [ ] Review screenshots for legibility and accidentally exposed account details.
+- [x] Review screenshots for legibility and accidentally exposed account details.
 - [ ] Verify the hackathon-provisioned account and record remaining balance before further substantial Bob tasks.
 
 The [IBM guide](https://lablab-ibm-bob-2-hackathon-guide.s3.us.cloud-object-storage.appdomain.cloud/index.html) requires Bob IDE as a core component and relevant task-summary screenshots in the repository. It provides 40 Bobcoins without an additional event allocation. Text logs are supporting context, not substitutes for screenshots. Use only synthetic or otherwise permitted data.
 
 ## Publication and team
 
-- [ ] Public GitHub repository is published and accessible while signed out.
-- [ ] Live application is deployed on the selected platform and works while signed out.
+- [x] Public GitHub repository is published and accessible while signed out.
+- [x] Live application is deployed on the selected platform and works while signed out.
 - [ ] Submission contains the final repository URL, direct demo URL, and hosting platform.
 - [ ] All human team members are registered and correctly listed on the lablab team.
 - [ ] Confirm the event's current closing time in the signed-in event page; the planning brief recorded September 27, 2026, 11 PM Philippine time.
