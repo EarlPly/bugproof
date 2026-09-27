@@ -1,6 +1,6 @@
 # BugProof project instructions
 
-Follow docs/build-brief.md and the IBM Bob hackathon rules. Use only synthetic data. Keep Bob evidence authentic. Do not fabricate test results, AI output, metrics, screenshots, or attribution. Bob IDE is a required core development tool; preserve relevant task summary screenshots in bob_sessions.
+Follow docs/build-brief.md and the IBM Bob hackathon rules. Use only non-sensitive sample data. Keep Bob evidence authentic. Do not fabricate test results, AI output, metrics, screenshots, or attribution. Bob IDE is a required core development tool; preserve relevant task summary screenshots in bob_sessions.
 
 For the current Bob task, own ONLY src/lib/inventory.ts, src/lib/inventory-original.ts, tests/inventory.test.ts, and docs/bob-investigation.md. Another collaborator owns the website, reports and configuration. Do not edit their files or install packages. Dependencies are managed outside Bob to preserve coins. Do not publish or deploy from Bob.
 
