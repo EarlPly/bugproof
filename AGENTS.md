@@ -9,3 +9,13 @@ Export from src/lib/inventory.ts: type ReservationResult = {status: number; stoc
 Use Node.js 22 or newer and pnpm from the local environment. Run `pnpm test` for verification. Dependency installation and package configuration remain assigned to the collaborator managing the website. Keep local runtime paths and account information out of committed instructions and public evidence.
 
 Record actual failing test evidence before patching, then actual passing checks. Keep one report of commands and results. Do not write fabricated durations. Keep task concise to conserve the 40 Bobcoins.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

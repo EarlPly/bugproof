@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
-import { existsSync, mkdtempSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdtempSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { homedir, tmpdir } from "node:os";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -29,7 +29,7 @@ function filesIn(directory: string): string[] {
 
 function fingerprint() {
   const inputs = [...new Set([
-    ...filesIn("src/lib"), ...filesIn("tests"), "app/api/reserve/route.ts", "scripts/generate-evidence.ts",
+    ...filesIn("src/lib"), ...filesIn("tests"), ...filesIn("app"), "scripts/generate-evidence.ts",
     "package.json", "pnpm-lock.yaml", "tsconfig.json", "vitest.config.ts",
   ])].filter((name) => existsSync(join(root, name))).sort();
   const hash = createHash("sha256");
@@ -102,7 +102,7 @@ try {
     cases: observations,
     testRun: { command: "vitest run --reporter=json", passed: run.numPassedTests, failed: run.numFailedTests, durationMs },
     provenance: {
-      bobContribution: "Bob IDE authored the inventory investigation, regression tests, and repair. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
+      bobContribution: "Bob IDE authored the inventory investigation, regression tests, repair, and explanatory replay logic with boundary tests. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
       sessionEvidence,
       limitations: [
         "Synthetic, intentionally seeded inventory defect; each demonstration starts with five units.",
@@ -117,6 +117,11 @@ try {
     },
   };
   mkdirSync(output, { recursive: true });
+  for (const name of sessionEvidence) {
+    const target = join(output, name);
+    mkdirSync(dirname(target), { recursive: true });
+    copyFileSync(join(root, name), target);
+  }
   const safeReport = JSON.parse(redact(JSON.stringify(report)));
   writeFileSync(join(output, "report.json"), JSON.stringify(safeReport, null, 2) + "\n");
   writeFileSync(join(output, "vitest-results.json"), redact(JSON.stringify(run, null, 2)) + "\n");
