@@ -1,0 +1,16 @@
+{
+  "sourceHash": "2f1270b2866255d4e86982fd0243b26ff392d6dc327ee40eb4516a568a88936c",
+  "algorithm": "sha256",
+  "inputs": [
+    "app/api/reserve/route.ts",
+    "package.json",
+    "pnpm-lock.yaml",
+    "scripts/generate-evidence.ts",
+    "src/lib/inventory-original.ts",
+    "src/lib/inventory.ts",
+    "tests/api.test.ts",
+    "tests/inventory.test.ts",
+    "tsconfig.json",
+    "vitest.config.ts"
+  ]
+}

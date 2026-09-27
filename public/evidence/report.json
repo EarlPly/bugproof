@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-27T01:14:47.409Z",
+  "source": {
+    "revision": null,
+    "sourceHash": "2f1270b2866255d4e86982fd0243b26ff392d6dc327ee40eb4516a568a88936c",
+    "dirty": true
+  },
+  "scenario": {
+    "id": "BP-001",
+    "title": "Prevent reservations from creating negative inventory",
+    "sku": "DEMO-001",
+    "startingStock": 5
+  },
+  "summary": {
+    "total": 11,
+    "originalPassed": 2,
+    "originalFailed": 9,
+    "fixedPassed": 11,
+    "fixedFailed": 0
+  },
+  "cases": [
+    {
+      "id": "excess",
+      "name": "Cannot reserve more than available",
+      "quantity": 7,
+      "expected": {
+        "status": 409,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": -2,
+        "reserved": 7,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 409,
+        "stock": 5,
+        "reserved": 0,
+        "message": "insufficient stock",
+        "passed": true
+      }
+    },
+    {
+      "id": "normal",
+      "name": "Reserve three units",
+      "quantity": 3,
+      "expected": {
+        "status": 200,
+        "stock": 2,
+        "reserved": 3
+      },
+      "original": {
+        "status": 200,
+        "stock": 2,
+        "reserved": 3,
+        "message": "reserved",
+        "passed": true
+      },
+      "fixed": {
+        "status": 200,
+        "stock": 2,
+        "reserved": 3,
+        "message": "reserved",
+        "passed": true
+      }
+    },
+    {
+      "id": "exact",
+      "name": "Reserve exactly available stock",
+      "quantity": 5,
+      "expected": {
+        "status": 200,
+        "stock": 0,
+        "reserved": 5
+      },
+      "original": {
+        "status": 200,
+        "stock": 0,
+        "reserved": 5,
+        "message": "reserved",
+        "passed": true
+      },
+      "fixed": {
+        "status": 200,
+        "stock": 0,
+        "reserved": 5,
+        "message": "reserved",
+        "passed": true
+      }
+    },
+    {
+      "id": "zero",
+      "name": "Reject zero",
+      "quantity": 0,
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": 5,
+        "reserved": 0,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "negative",
+      "name": "Reject negative",
+      "quantity": -2,
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": 7,
+        "reserved": -2,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "fractional",
+      "name": "Reject fractional",
+      "quantity": 1.5,
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": 3.5,
+        "reserved": 1.5,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "text",
+      "name": "Reject nonnumeric text",
+      "quantity": "abc",
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": "NaN",
+        "reserved": "abc",
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "numeric-string",
+      "name": "Reject numeric strings",
+      "quantity": "3",
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": 2,
+        "reserved": "3",
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "null",
+      "name": "Reject null",
+      "quantity": null,
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": 5,
+        "reserved": null,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "boolean",
+      "name": "Reject boolean",
+      "quantity": true,
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": 4,
+        "reserved": true,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    },
+    {
+      "id": "unsafe",
+      "name": "Reject unsafe integer",
+      "quantity": 9007199254740992,
+      "expected": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0
+      },
+      "original": {
+        "status": 200,
+        "stock": -9007199254740987,
+        "reserved": 9007199254740992,
+        "message": "reserved",
+        "passed": false
+      },
+      "fixed": {
+        "status": 400,
+        "stock": 5,
+        "reserved": 0,
+        "message": "invalid quantity",
+        "passed": true
+      }
+    }
+  ],
+  "testRun": {
+    "command": "vitest run --reporter=json",
+    "passed": 36,
+    "failed": 0,
+    "durationMs": 858
+  },
+  "provenance": {
+    "bobContribution": "Bob IDE authored the inventory investigation, regression tests, and repair. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
+    "sessionEvidence": [
+      "bob_sessions/earl_2026-09-26_inventory-repair-results.png",
+      "bob_sessions/earl_2026-09-26_inventory-repair-summary.png"
+    ],
+    "limitations": [
+      "Synthetic, intentionally seeded inventory defect; each demonstration starts with five units.",
+      "Original failures against the independent expectations are expected evidence of the defect, not a successful production implementation.",
+      "The original fixture can produce non-finite numbers; these are serialized as strings such as NaN. Runtime string/boolean values are preserved.",
+      "Recorded local verification; the public website does not invoke Bob or execute uploaded code.",
+      "No persistent inventory, concurrency guarantee, security certification, or measured productivity baseline.",
+      "The source hash identifies exact tested inputs. Git revision may be null or refer to an earlier commit when the workspace is dirty."
+    ]
+  }
+}

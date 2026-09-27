@@ -1,0 +1,481 @@
+{
+  "numTotalTestSuites": 9,
+  "numPassedTestSuites": 9,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 36,
+  "numPassedTests": 36,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1790471687181,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary propagates a fixed conflict without consuming stock",
+          "status": "passed",
+          "title": "propagates a fixed conflict without consuming stock",
+          "duration": 21.29133300000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary preserves the seeded original bug for comparison",
+          "status": "passed",
+          "title": "preserves the seeded original bug for comparison",
+          "duration": 0.47604200000000674,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary isolates state between requests",
+          "status": "passed",
+          "title": "isolates state between requests",
+          "duration": 0.6785000000000139,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity 0 without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity 0 without mutation",
+          "duration": 0.39970800000000395,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity -2 without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity -2 without mutation",
+          "duration": 0.2747499999999832,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity 1.5 without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity 1.5 without mutation",
+          "duration": 0.22999999999998977,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity \"abc\" without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity \"abc\" without mutation",
+          "duration": 0.225750000000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity \"3\" without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity \"3\" without mutation",
+          "duration": 0.22399999999998954,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity null without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity null without mutation",
+          "duration": 0.2537089999999864,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity true without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity true without mutation",
+          "duration": 0.21712499999998158,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid fixed quantity 9007199254740992 without mutation",
+          "status": "passed",
+          "title": "rejects invalid fixed quantity 9007199254740992 without mutation",
+          "duration": 0.17491699999999355,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema null",
+          "status": "passed",
+          "title": "rejects invalid request schema null",
+          "duration": 0.18174999999999386,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema undefined",
+          "status": "passed",
+          "title": "rejects invalid request schema undefined",
+          "duration": 0.1022079999999903,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {}",
+          "status": "passed",
+          "title": "rejects invalid request schema {}",
+          "duration": 0.10295899999999847,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {\"quantity\":2}",
+          "status": "passed",
+          "title": "rejects invalid request schema {\"quantity\":2}",
+          "duration": 0.08329100000000267,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\"}",
+          "status": "passed",
+          "title": "rejects invalid request schema {\"mode\":\"fixed\"}",
+          "duration": 0.07579099999998107,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"unknown\",\"quantity\":2}",
+          "status": "passed",
+          "title": "rejects invalid request schema {\"mode\":\"unknown\",\"quantity\":2}",
+          "duration": 0.07008399999998005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":{}}",
+          "status": "passed",
+          "title": "rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":{}}",
+          "duration": 0.1373749999999916,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":[]}",
+          "status": "passed",
+          "title": "rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":[]}",
+          "duration": 0.1337079999999844,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":2,\"stock\":999}",
+          "status": "passed",
+          "title": "rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":2,\"stock\":999}",
+          "duration": 0.10837500000002365,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects malformed JSON",
+          "status": "passed",
+          "title": "rejects malformed JSON",
+          "duration": 0.17208300000001486,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary rejects non-JSON media types",
+          "status": "passed",
+          "title": "rejects non-JSON media types",
+          "duration": 0.26591600000000426,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary bounds actual body bytes even without Content-Length",
+          "status": "passed",
+          "title": "bounds actual body bytes even without Content-Length",
+          "duration": 0.22733400000001325,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reservation HTTP boundary"
+          ],
+          "fullName": "reservation HTTP boundary does not disguise original non-finite output as a numeric result",
+          "status": "passed",
+          "title": "does not disguise original non-finite output as a numeric result",
+          "duration": 0.19487499999999613,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1790471687352,
+      "endTime": 1790471687378.2659,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/api.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "reserveInventory — regression: insufficient stock"
+          ],
+          "fullName": "reserveInventory — regression: insufficient stock returns status 409 and preserves stock when quantity exceeds stock (stock=5, qty=7)",
+          "status": "passed",
+          "title": "returns status 409 and preserves stock when quantity exceeds stock (stock=5, qty=7)",
+          "duration": 1.092458000000022,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — success cases"
+          ],
+          "fullName": "reserveInventory — success cases normal reservation reduces stock correctly",
+          "status": "passed",
+          "title": "normal reservation reduces stock correctly",
+          "duration": 0.2680829999999901,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — success cases"
+          ],
+          "fullName": "reserveInventory — success cases exact-stock reservation (quantity === stock)",
+          "status": "passed",
+          "title": "exact-stock reservation (quantity === stock)",
+          "duration": 0.3084999999999809,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — insufficient stock (409)"
+          ],
+          "fullName": "reserveInventory — insufficient stock (409) returns 409 and does not mutate stock when qty > stock",
+          "status": "passed",
+          "title": "returns 409 and does not mutate stock when qty > stock",
+          "duration": 0.11549999999999727,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid quantity (400)"
+          ],
+          "fullName": "reserveInventory — invalid quantity (400) zero quantity is invalid",
+          "status": "passed",
+          "title": "zero quantity is invalid",
+          "duration": 0.10195800000002464,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid quantity (400)"
+          ],
+          "fullName": "reserveInventory — invalid quantity (400) negative quantity is invalid",
+          "status": "passed",
+          "title": "negative quantity is invalid",
+          "duration": 0.09449999999998226,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid quantity (400)"
+          ],
+          "fullName": "reserveInventory — invalid quantity (400) fractional quantity is invalid",
+          "status": "passed",
+          "title": "fractional quantity is invalid",
+          "duration": 0.08949999999998681,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid quantity (400)"
+          ],
+          "fullName": "reserveInventory — invalid quantity (400) non-numeric string quantity is invalid",
+          "status": "passed",
+          "title": "non-numeric string quantity is invalid",
+          "duration": 0.12812499999998295,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid quantity (400)"
+          ],
+          "fullName": "reserveInventory — invalid quantity (400) unsafe integer quantity is invalid",
+          "status": "passed",
+          "title": "unsafe integer quantity is invalid",
+          "duration": 0.1497500000000116,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid stock (400)"
+          ],
+          "fullName": "reserveInventory — invalid stock (400) negative stock is invalid",
+          "status": "passed",
+          "title": "negative stock is invalid",
+          "duration": 0.11537500000000023,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventory — invalid stock (400)"
+          ],
+          "fullName": "reserveInventory — invalid stock (400) fractional stock is invalid",
+          "status": "passed",
+          "title": "fractional stock is invalid",
+          "duration": 0.08012500000000955,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "reserveInventoryOriginal — defect demonstration"
+          ],
+          "fullName": "reserveInventoryOriginal — defect demonstration subtracts quantity with no guard: stock=5 qty=7 → remaining=-2",
+          "status": "passed",
+          "title": "subtracts quantity with no guard: stock=5 qty=7 → remaining=-2",
+          "duration": 0.08487499999998249,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1790471687352,
+      "endTime": 1790471687355.1155,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/inventory.test.ts"
+    }
+  ]
+}
