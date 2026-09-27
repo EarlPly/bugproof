@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T12:52:32.061Z",
+  "generatedAt": "2026-09-27T14:04:57.369Z",
   "source": {
-    "revision": "ce7b2832d314a94c045772da0dd1972403cd7f94",
-    "sourceHash": "2eedb65b84e0f580747ccc89669e97817f350098b0b5d570b3df8f7c98b5fb95",
+    "revision": "66f537479bbb0dfaf1943ed08810a97f7850467a",
+    "sourceHash": "245b6c4ace742979415ebcfc8a69b547188548a238b151c6428cc018001cbc54",
     "dirty": true
   },
   "scenario": {
@@ -287,9 +287,9 @@
   ],
   "testRun": {
     "command": "vitest run --reporter=json",
-    "passed": 74,
+    "passed": 78,
     "failed": 0,
-    "durationMs": 558
+    "durationMs": 630
   },
   "provenance": {
     "bobContribution": "Bob IDE authored the inventory investigation, regression tests, repair, and explanatory replay logic with boundary tests. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
@@ -299,7 +299,7 @@
       "bob_sessions/earl_2026-09-27_replay-summary.png"
     ],
     "limitations": [
-      "Synthetic, intentionally seeded inventory defect; each demonstration starts with five units.",
+      "Sample, intentionally introduced inventory defect; each demonstration starts with five units.",
       "Original failures against the independent expectations are expected evidence of the defect, not a successful production implementation.",
       "The original fixture can produce non-finite numbers; these are serialized as strings such as NaN. Runtime string/boolean values are preserved.",
       "Recorded local verification; the public website does not invoke Bob or execute uploaded code.",

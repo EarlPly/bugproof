@@ -12,7 +12,7 @@ Target user: a developer maintaining an unfamiliar small service. The immediate 
 
 ## First scenario: reserving more inventory than exists
 
-Use a fictional inventory service with one item, `DEMO-001`, and five units in stock. All data is synthetic.
+Use a sample inventory service with one item, `DEMO-001`, and five units in stock. All data is sample.
 
 Bug report: “The service accepts a reservation for seven units even though only five are available. Stock becomes negative.”
 
@@ -23,7 +23,7 @@ Expected behavior:
 - Reserving exactly five units succeeds and leaves stock at zero.
 - Zero, negative, fractional, and nonnumeric quantities are rejected without changing stock.
 
-The broken demonstration subtracts the requested quantity without checking availability. The corrected implementation validates the input and available stock before making the change. This is an intentionally seeded defect in a sample project, disclosed as such in the demo and submission.
+The broken demonstration subtracts the requested quantity without checking availability. The corrected implementation validates the input and available stock before making the change. This is an intentionally introduced defect in a sample project, disclosed as such in the demo and submission.
 
 Each web demonstration starts with isolated inventory. We will label this reset clearly. Shared persistent stock, concurrent reservations, and production inventory guarantees are outside the first version.
 
@@ -70,7 +70,7 @@ Exclude account systems, billing, arbitrary repository uploads, autonomous produ
 
 ## Measuring impact honestly
 
-Record time spent on reproduction, test creation, repair, verification, and human intervention. Keep the raw results and note whether they came from a seeded sample.
+Record time spent on reproduction, test creation, repair, verification, and human intervention. Keep the raw results and note whether they came from a introduced sample.
 
 The strongest initial evidence is functional: a reproducible defect, a regression test that catches it, a patch, and passing related checks. To claim time savings, use a documented manual baseline under comparable conditions. Repeating the same bug after learning its answer is not an unbiased comparison. If no defensible baseline is available, report observed workflow time without a percentage-improvement claim.
 
@@ -126,7 +126,7 @@ General rulebook: https://lablab.ai/hackathon-rules
 
 Submission tutorial: https://lablab.ai/ai-articles/hackathon-guidelines
 
-The IBM guide requires Bob IDE, provides 40 Bobcoins per participant without a top-up, makes Bob Shell and watsonx optional, and prohibits client data, personal information, social-media data, and unauthorized confidential material. Use only synthetic fixtures for this plan. The general rulebook lists Streamlit, Replit, or Vercel; this plan uses Vercel. Follow the event's stricter three-minute video limit rather than the generic tutorial's five-minute limit. Recheck event-specific instructions before building and submitting.
+The IBM guide requires Bob IDE, provides 40 Bobcoins per participant without a top-up, makes Bob Shell and watsonx optional, and prohibits client data, personal information, social-media data, and unauthorized confidential material. Use only sample fixtures for this plan. The general rulebook lists Streamlit, Replit, or Vercel; this plan uses Vercel. Follow the event's stricter three-minute video limit rather than the generic tutorial's five-minute limit. Recheck event-specific instructions before building and submitting.
 
 ## Current setup status
 

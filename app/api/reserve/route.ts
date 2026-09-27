@@ -59,7 +59,7 @@ export async function POST(request: Request): Promise<Response> {
     return error(400, "Provide a scalar quantity and mode of original or fixed.");
   }
 
-  // Each request starts from five synthetic units. No shared stock or user code.
+  // Each request starts from five sample units. No shared stock or user code.
   const run = input.mode === "original" ? reserveInventoryOriginal : reserveInventory;
   const result = run(STARTING_STOCK, input.quantity);
   // The deliberately broken fixture can produce NaN; retain that evidence

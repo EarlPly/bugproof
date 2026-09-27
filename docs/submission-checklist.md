@@ -4,7 +4,7 @@ Status snapshot: September 27, 2026. Checked boxes describe observed completed w
 
 ## Working prototype and attribution
 
-- [x] One synthetic developer workflow: reported defect → reproduction → failing regression → Bob-assisted repair → passing verification.
+- [x] One sample developer workflow: reported defect → reproduction → failing regression → Bob-assisted repair → passing verification.
 - [x] Original fixture is preserved and explicitly labeled.
 - [x] Real verification reports include outcomes, source fingerprint, and measured test-run duration.
 - [x] Bob's actual domain/test/repair contribution is distinguished from assistant-authored website and tooling.
@@ -21,7 +21,7 @@ Status snapshot: September 27, 2026. Checked boxes describe observed completed w
 - [x] Review screenshots for legibility and accidentally exposed account details.
 - [ ] Verify the hackathon-provisioned account and record remaining balance before further substantial Bob tasks.
 
-The [IBM guide](https://lablab-ibm-bob-2-hackathon-guide.s3.us.cloud-object-storage.appdomain.cloud/index.html) requires Bob IDE as a core component and relevant task-summary screenshots in the repository. It provides 40 Bobcoins without an additional event allocation. Text logs are supporting context, not substitutes for screenshots. Use only synthetic or otherwise permitted data.
+The [IBM guide](https://lablab-ibm-bob-2-hackathon-guide.s3.us.cloud-object-storage.appdomain.cloud/index.html) requires Bob IDE as a core component and relevant task-summary screenshots in the repository. It provides 40 Bobcoins without an additional event allocation. Text logs are supporting context, not substitutes for screenshots. Use only sample or otherwise permitted data.
 
 ## Publication and team
 

@@ -1,5 +1,5 @@
 {
-  "sourceHash": "2eedb65b84e0f580747ccc89669e97817f350098b0b5d570b3df8f7c98b5fb95",
+  "sourceHash": "245b6c4ace742979415ebcfc8a69b547188548a238b151c6428cc018001cbc54",
   "algorithm": "sha256",
   "inputs": [
     "app/api/reserve/route.ts",
@@ -7,6 +7,7 @@
     "app/components/home.tsx",
     "app/components/investigation.tsx",
     "app/components/resources.tsx",
+    "app/components/workbench.tsx",
     "app/evidence/page.tsx",
     "app/globals.css",
     "app/guide/page.tsx",
@@ -19,6 +20,7 @@
     "app/missions/page.tsx",
     "app/not-found.tsx",
     "app/page.tsx",
+    "app/workbench/page.tsx",
     "package.json",
     "pnpm-lock.yaml",
     "scripts/generate-evidence.ts",
@@ -26,10 +28,12 @@
     "src/lib/inventory.ts",
     "src/lib/lab.ts",
     "src/lib/trace.ts",
+    "src/lib/workbench.ts",
     "tests/api.test.ts",
     "tests/inventory.test.ts",
     "tests/lab.test.ts",
     "tests/trace.test.ts",
+    "tests/workbench.test.ts",
     "tsconfig.json",
     "vitest.config.ts"
   ]

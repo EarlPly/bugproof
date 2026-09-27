@@ -1,10 +1,10 @@
 {
-  "numTotalTestSuites": 16,
-  "numPassedTestSuites": 16,
+  "numTotalTestSuites": 18,
+  "numPassedTestSuites": 18,
   "numFailedTestSuites": 0,
   "numPendingTestSuites": 0,
-  "numTotalTests": 74,
-  "numPassedTests": 74,
+  "numTotalTests": 78,
+  "numPassedTests": 78,
   "numFailedTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
@@ -24,7 +24,7 @@
     "updated": 0,
     "didUpdate": false
   },
-  "startTime": 1790513551801,
+  "startTime": 1790517897131,
   "success": true,
   "testResults": [
     {
@@ -36,7 +36,7 @@
           "fullName": "reservation HTTP boundary propagates a fixed conflict without consuming stock",
           "status": "passed",
           "title": "propagates a fixed conflict without consuming stock",
-          "duration": 19.71112500000001,
+          "duration": 20.42170900000002,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -48,7 +48,7 @@
           "fullName": "reservation HTTP boundary preserves the seeded original bug for comparison",
           "status": "passed",
           "title": "preserves the seeded original bug for comparison",
-          "duration": 0.5227089999999919,
+          "duration": 0.41083399999999415,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -60,7 +60,7 @@
           "fullName": "reservation HTTP boundary isolates state between requests",
           "status": "passed",
           "title": "isolates state between requests",
-          "duration": 0.650541000000004,
+          "duration": 0.5660419999999817,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -72,7 +72,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity 0 without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity 0 without mutation",
-          "duration": 0.38545799999999986,
+          "duration": 0.4765000000000157,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -84,7 +84,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity -2 without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity -2 without mutation",
-          "duration": 0.26037499999998204,
+          "duration": 0.3623749999999859,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -96,7 +96,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity 1.5 without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity 1.5 without mutation",
-          "duration": 0.4117080000000044,
+          "duration": 0.30904200000000515,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -108,7 +108,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity \"abc\" without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity \"abc\" without mutation",
-          "duration": 0.2787079999999946,
+          "duration": 0.4701249999999959,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -120,7 +120,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity \"3\" without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity \"3\" without mutation",
-          "duration": 0.24970799999999826,
+          "duration": 0.25312500000001137,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -132,7 +132,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity null without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity null without mutation",
-          "duration": 0.2589590000000044,
+          "duration": 0.3307920000000024,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -144,7 +144,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity true without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity true without mutation",
-          "duration": 0.21370899999999438,
+          "duration": 0.21320800000000872,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -156,7 +156,7 @@
           "fullName": "reservation HTTP boundary rejects invalid fixed quantity 9007199254740992 without mutation",
           "status": "passed",
           "title": "rejects invalid fixed quantity 9007199254740992 without mutation",
-          "duration": 0.17175000000000296,
+          "duration": 0.17916700000000674,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -168,7 +168,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema null",
           "status": "passed",
           "title": "rejects invalid request schema null",
-          "duration": 0.1944170000000156,
+          "duration": 0.16674999999997908,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -180,7 +180,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema undefined",
           "status": "passed",
           "title": "rejects invalid request schema undefined",
-          "duration": 0.11187499999999773,
+          "duration": 0.08470800000000622,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -192,7 +192,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {}",
           "status": "passed",
           "title": "rejects invalid request schema {}",
-          "duration": 0.09541699999999764,
+          "duration": 0.07929199999998104,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -204,7 +204,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {\"quantity\":2}",
           "status": "passed",
           "title": "rejects invalid request schema {\"quantity\":2}",
-          "duration": 0.08854099999999221,
+          "duration": 0.07987499999998704,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -216,7 +216,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\"}",
           "status": "passed",
           "title": "rejects invalid request schema {\"mode\":\"fixed\"}",
-          "duration": 0.08041600000001381,
+          "duration": 0.07575000000002774,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -228,7 +228,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"unknown\",\"quantity\":2}",
           "status": "passed",
           "title": "rejects invalid request schema {\"mode\":\"unknown\",\"quantity\":2}",
-          "duration": 0.07604200000000105,
+          "duration": 0.0679580000000044,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -240,7 +240,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":{}}",
           "status": "passed",
           "title": "rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":{}}",
-          "duration": 0.0765829999999994,
+          "duration": 0.06554200000002197,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -252,7 +252,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":[]}",
           "status": "passed",
           "title": "rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":[]}",
-          "duration": 0.07349999999999568,
+          "duration": 0.0629160000000013,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -264,7 +264,7 @@
           "fullName": "reservation HTTP boundary rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":2,\"stock\":999}",
           "status": "passed",
           "title": "rejects invalid request schema {\"mode\":\"fixed\",\"quantity\":2,\"stock\":999}",
-          "duration": 0.07550000000000523,
+          "duration": 0.07033300000000509,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -276,7 +276,7 @@
           "fullName": "reservation HTTP boundary rejects malformed JSON",
           "status": "passed",
           "title": "rejects malformed JSON",
-          "duration": 0.133041999999989,
+          "duration": 0.12083300000000463,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -288,7 +288,7 @@
           "fullName": "reservation HTTP boundary rejects non-JSON media types",
           "status": "passed",
           "title": "rejects non-JSON media types",
-          "duration": 0.14120799999997757,
+          "duration": 0.12129200000001106,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -300,7 +300,7 @@
           "fullName": "reservation HTTP boundary bounds actual body bytes even without Content-Length",
           "status": "passed",
           "title": "bounds actual body bytes even without Content-Length",
-          "duration": 0.16708399999998846,
+          "duration": 0.14141599999999244,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -312,14 +312,14 @@
           "fullName": "reservation HTTP boundary does not disguise original non-finite output as a numeric result",
           "status": "passed",
           "title": "does not disguise original non-finite output as a numeric result",
-          "duration": 0.15220800000000168,
+          "duration": 0.13050000000001205,
           "failureMessages": [],
           "meta": {},
           "tags": []
         }
       ],
-      "startTime": 1790513552004,
-      "endTime": 1790513552029.167,
+      "startTime": 1790517897309,
+      "endTime": 1790517897335.1414,
       "status": "passed",
       "message": "",
       "name": "<project>/tests/api.test.ts"
@@ -333,7 +333,7 @@
           "fullName": "reserveInventory — regression: insufficient stock returns status 409 and preserves stock when quantity exceeds stock (stock=5, qty=7)",
           "status": "passed",
           "title": "returns status 409 and preserves stock when quantity exceeds stock (stock=5, qty=7)",
-          "duration": 1.0607910000000231,
+          "duration": 0.8723750000000052,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -345,7 +345,7 @@
           "fullName": "reserveInventory — success cases normal reservation reduces stock correctly",
           "status": "passed",
           "title": "normal reservation reduces stock correctly",
-          "duration": 0.15166700000000333,
+          "duration": 0.1344169999999849,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -357,7 +357,7 @@
           "fullName": "reserveInventory — success cases exact-stock reservation (quantity === stock)",
           "status": "passed",
           "title": "exact-stock reservation (quantity === stock)",
-          "duration": 0.11337499999999068,
+          "duration": 0.11279199999998468,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -369,7 +369,7 @@
           "fullName": "reserveInventory — insufficient stock (409) returns 409 and does not mutate stock when qty > stock",
           "status": "passed",
           "title": "returns 409 and does not mutate stock when qty > stock",
-          "duration": 0.10666700000001583,
+          "duration": 0.09120799999999463,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -381,7 +381,7 @@
           "fullName": "reserveInventory — invalid quantity (400) zero quantity is invalid",
           "status": "passed",
           "title": "zero quantity is invalid",
-          "duration": 0.09708300000002623,
+          "duration": 0.08420900000001552,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -393,7 +393,7 @@
           "fullName": "reserveInventory — invalid quantity (400) negative quantity is invalid",
           "status": "passed",
           "title": "negative quantity is invalid",
-          "duration": 0.09266700000000583,
+          "duration": 0.0741249999999809,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -405,7 +405,7 @@
           "fullName": "reserveInventory — invalid quantity (400) fractional quantity is invalid",
           "status": "passed",
           "title": "fractional quantity is invalid",
-          "duration": 0.09583399999999642,
+          "duration": 0.6290419999999983,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -417,7 +417,7 @@
           "fullName": "reserveInventory — invalid quantity (400) non-numeric string quantity is invalid",
           "status": "passed",
           "title": "non-numeric string quantity is invalid",
-          "duration": 0.12812499999998295,
+          "duration": 0.14895900000001916,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -429,7 +429,7 @@
           "fullName": "reserveInventory — invalid quantity (400) unsafe integer quantity is invalid",
           "status": "passed",
           "title": "unsafe integer quantity is invalid",
-          "duration": 0.1335420000000056,
+          "duration": 0.18237499999997908,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -441,7 +441,7 @@
           "fullName": "reserveInventory — invalid stock (400) negative stock is invalid",
           "status": "passed",
           "title": "negative stock is invalid",
-          "duration": 0.13529199999999264,
+          "duration": 0.11899999999999977,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -453,7 +453,7 @@
           "fullName": "reserveInventory — invalid stock (400) fractional stock is invalid",
           "status": "passed",
           "title": "fractional stock is invalid",
-          "duration": 0.08320800000001327,
+          "duration": 0.07824999999999704,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -465,14 +465,14 @@
           "fullName": "reserveInventoryOriginal — defect demonstration subtracts quantity with no guard: stock=5 qty=7 → remaining=-2",
           "status": "passed",
           "title": "subtracts quantity with no guard: stock=5 qty=7 → remaining=-2",
-          "duration": 0.09229199999998627,
+          "duration": 0.08487500000001091,
           "failureMessages": [],
           "meta": {},
           "tags": []
         }
       ],
-      "startTime": 1790513552004,
-      "endTime": 1790513552007.0923,
+      "startTime": 1790517897309,
+      "endTime": 1790517897312.1824,
       "status": "passed",
       "message": "",
       "name": "<project>/tests/inventory.test.ts"
@@ -486,7 +486,7 @@
           "fullName": "interactive investigation input and proof preserves input type for 7",
           "status": "passed",
           "title": "preserves input type for 7",
-          "duration": 1.0469579999999894,
+          "duration": 0.8280420000000106,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -498,7 +498,7 @@
           "fullName": "interactive investigation input and proof preserves input type for \"3\"",
           "status": "passed",
           "title": "preserves input type for \"3\"",
-          "duration": 0.10466699999997786,
+          "duration": 0.08712500000001455,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -510,7 +510,7 @@
           "fullName": "interactive investigation input and proof preserves input type for \"banana\"",
           "status": "passed",
           "title": "preserves input type for \"banana\"",
-          "duration": 0.08875000000000455,
+          "duration": 0.0660829999999919,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -522,7 +522,7 @@
           "fullName": "interactive investigation input and proof preserves input type for null",
           "status": "passed",
           "title": "preserves input type for null",
-          "duration": 0.07158300000000395,
+          "duration": 0.05616599999999039,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -534,7 +534,7 @@
           "fullName": "interactive investigation input and proof preserves input type for true",
           "status": "passed",
           "title": "preserves input type for true",
-          "duration": 0.07029100000002586,
+          "duration": 0.059291999999999234,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -546,7 +546,7 @@
           "fullName": "interactive investigation input and proof preserves input type for -2",
           "status": "passed",
           "title": "preserves input type for -2",
-          "duration": 0.06191599999999653,
+          "duration": 0.05116699999999241,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -558,7 +558,7 @@
           "fullName": "interactive investigation input and proof rejects malformed or unsupported quantity ",
           "status": "passed",
           "title": "rejects malformed or unsupported quantity ",
-          "duration": 0.46750000000000114,
+          "duration": 0.40883300000001555,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -570,7 +570,7 @@
           "fullName": "interactive investigation input and proof rejects malformed or unsupported quantity banana",
           "status": "passed",
           "title": "rejects malformed or unsupported quantity banana",
-          "duration": 0.11479199999999423,
+          "duration": 0.10320799999999508,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -582,7 +582,7 @@
           "fullName": "interactive investigation input and proof rejects malformed or unsupported quantity []",
           "status": "passed",
           "title": "rejects malformed or unsupported quantity []",
-          "duration": 0.10499999999998977,
+          "duration": 0.09254200000000878,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -594,7 +594,7 @@
           "fullName": "interactive investigation input and proof rejects malformed or unsupported quantity {}",
           "status": "passed",
           "title": "rejects malformed or unsupported quantity {}",
-          "duration": 0.12237500000000523,
+          "duration": 0.10629199999999628,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -606,7 +606,7 @@
           "fullName": "interactive investigation input and proof rejects malformed or unsupported quantity 1e999",
           "status": "passed",
           "title": "rejects malformed or unsupported quantity 1e999",
-          "duration": 0.07983400000000529,
+          "duration": 0.07133400000000734,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -618,7 +618,7 @@
           "fullName": "interactive investigation input and proof evaluates the complete reservation contract",
           "status": "passed",
           "title": "evaluates the complete reservation contract",
-          "duration": 0.48545799999999417,
+          "duration": 0.42712499999998954,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -630,7 +630,7 @@
           "fullName": "interactive investigation input and proof does not call a matching status proof when stock is wrong",
           "status": "passed",
           "title": "does not call a matching status proof when stock is wrong",
-          "duration": 0.0817079999999919,
+          "duration": 0.06691699999998946,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -642,7 +642,7 @@
           "fullName": "interactive investigation input and proof does not trust persisted result or completion claims",
           "status": "passed",
           "title": "does not trust persisted result or completion claims",
-          "duration": 0.2548749999999984,
+          "duration": 0.20458399999998278,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -654,7 +654,7 @@
           "fullName": "interactive investigation input and proof ignores stale storage",
           "status": "passed",
           "title": "ignores stale storage",
-          "duration": 0.04925000000000068,
+          "duration": 0.04116700000000151,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -666,7 +666,7 @@
           "fullName": "interactive investigation input and proof returns malformed saved input to the report instead of opening a broken replay",
           "status": "passed",
           "title": "returns malformed saved input to the report instead of opening a broken replay",
-          "duration": 0.27720799999997325,
+          "duration": 0.08095900000000711,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -678,14 +678,14 @@
           "fullName": "interactive investigation input and proof restores a valid report without duplicating earned mission badges",
           "status": "passed",
           "title": "restores a valid report without duplicating earned mission badges",
-          "duration": 0.26387499999998454,
+          "duration": 0.06720800000002214,
           "failureMessages": [],
           "meta": {},
           "tags": []
         }
       ],
-      "startTime": 1790513551999,
-      "endTime": 1790513552003.264,
+      "startTime": 1790517897307,
+      "endTime": 1790517897309.4272,
       "status": "passed",
       "message": "",
       "name": "<project>/tests/lab.test.ts"
@@ -699,7 +699,7 @@
           "fullName": "original mode overflow: quantity 7 → stock becomes -2",
           "status": "passed",
           "title": "overflow: quantity 7 → stock becomes -2",
-          "duration": 2.878042000000022,
+          "duration": 2.609958000000006,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -711,7 +711,7 @@
           "fullName": "original mode negative: quantity -2 → stock becomes 7 (adds stock)",
           "status": "passed",
           "title": "negative: quantity -2 → stock becomes 7 (adds stock)",
-          "duration": 0.5230420000000038,
+          "duration": 0.5051250000000209,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -723,7 +723,7 @@
           "fullName": "original mode text banana → stock is NaN, reserved stays as string",
           "status": "passed",
           "title": "text banana → stock is NaN, reserved stays as string",
-          "duration": 0.584165999999982,
+          "duration": 0.5184169999999995,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -735,7 +735,7 @@
           "fullName": "original mode numeric-string '3' → stock becomes 2 (JS coerces string to 3)",
           "status": "passed",
           "title": "numeric-string '3' → stock becomes 2 (JS coerces string to 3)",
-          "duration": 0.47587500000000205,
+          "duration": 0.4054999999999893,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -747,7 +747,7 @@
           "fullName": "original mode null → stock becomes 5 (JS coerces null to 0)",
           "status": "passed",
           "title": "null → stock becomes 5 (JS coerces null to 0)",
-          "duration": 0.49850000000000705,
+          "duration": 0.43949999999998113,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -759,7 +759,7 @@
           "fullName": "original mode boolean true → stock becomes 4 (JS coerces true to 1)",
           "status": "passed",
           "title": "boolean true → stock becomes 4 (JS coerces true to 1)",
-          "duration": 0.4137920000000008,
+          "duration": 0.3654590000000155,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -771,7 +771,7 @@
           "fullName": "original mode normal: quantity 3 → stock becomes 2",
           "status": "passed",
           "title": "normal: quantity 3 → stock becomes 2",
-          "duration": 0.3907080000000178,
+          "duration": 0.34375,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -783,7 +783,7 @@
           "fullName": "original mode exact: quantity 5 → stock becomes 0",
           "status": "passed",
           "title": "exact: quantity 5 → stock becomes 0",
-          "duration": 0.29920799999999304,
+          "duration": 0.3263330000000053,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -795,7 +795,7 @@
           "fullName": "original mode zero: quantity 0 → stock stays 5 (original allows it)",
           "status": "passed",
           "title": "zero: quantity 0 → stock stays 5 (original allows it)",
-          "duration": 0.3197499999999991,
+          "duration": 0.31904199999999605,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -807,7 +807,7 @@
           "fullName": "fixed mode overflow: quantity 7 → 409, stock preserved at 5",
           "status": "passed",
           "title": "overflow: quantity 7 → 409, stock preserved at 5",
-          "duration": 0.43054200000000264,
+          "duration": 0.41491599999997675,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -819,7 +819,7 @@
           "fullName": "fixed mode negative: quantity -2 → 400, stock preserved at 5",
           "status": "passed",
           "title": "negative: quantity -2 → 400, stock preserved at 5",
-          "duration": 0.3653750000000002,
+          "duration": 0.29120799999998326,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -831,7 +831,7 @@
           "fullName": "fixed mode text banana → 400, stock preserved at 5, no subtract",
           "status": "passed",
           "title": "text banana → 400, stock preserved at 5, no subtract",
-          "duration": 0.36299999999999955,
+          "duration": 0.325333999999998,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -843,7 +843,7 @@
           "fullName": "fixed mode numeric-string '3' → 400, stock preserved at 5",
           "status": "passed",
           "title": "numeric-string '3' → 400, stock preserved at 5",
-          "duration": 0.34408399999998096,
+          "duration": 0.33424999999999727,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -855,7 +855,7 @@
           "fullName": "fixed mode null → 400, stock preserved at 5",
           "status": "passed",
           "title": "null → 400, stock preserved at 5",
-          "duration": 0.2704999999999984,
+          "duration": 0.251166000000012,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -867,7 +867,7 @@
           "fullName": "fixed mode boolean true → 400, stock preserved at 5",
           "status": "passed",
           "title": "boolean true → 400, stock preserved at 5",
-          "duration": 0.2842909999999961,
+          "duration": 0.25233299999999304,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -879,7 +879,7 @@
           "fullName": "fixed mode normal: quantity 3 → 200, stock becomes 2",
           "status": "passed",
           "title": "normal: quantity 3 → 200, stock becomes 2",
-          "duration": 0.38025000000001796,
+          "duration": 0.2518750000000125,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -891,7 +891,7 @@
           "fullName": "fixed mode exact: quantity 5 → 200, stock becomes 0",
           "status": "passed",
           "title": "exact: quantity 5 → 200, stock becomes 0",
-          "duration": 0.31254200000000765,
+          "duration": 0.24258300000002464,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -903,7 +903,7 @@
           "fullName": "fixed mode zero: quantity 0 → 400, stock preserved at 5",
           "status": "passed",
           "title": "zero: quantity 0 → 400, stock preserved at 5",
-          "duration": 0.2782919999999933,
+          "duration": 0.24216699999999491,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -915,7 +915,7 @@
           "fullName": "step 1 invariant first step stock is always 5 regardless of mode or quantity",
           "status": "passed",
           "title": "first step stock is always 5 regardless of mode or quantity",
-          "duration": 0.34116699999998445,
+          "duration": 0.30016699999998764,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -927,7 +927,7 @@
           "fullName": "step 4 mirrors result response step stock equals result.stock for number inputs",
           "status": "passed",
           "title": "response step stock equals result.stock for number inputs",
-          "duration": 0.16741700000000037,
+          "duration": 0.16204200000001379,
           "failureMessages": [],
           "meta": {},
           "tags": []
@@ -939,17 +939,74 @@
           "fullName": "step 4 mirrors result response code uses NaN replacer so banana result is not null",
           "status": "passed",
           "title": "response code uses NaN replacer so banana result is not null",
-          "duration": 0.12708299999999895,
+          "duration": 0.37599999999997635,
           "failureMessages": [],
           "meta": {},
           "tags": []
         }
       ],
-      "startTime": 1790513552005,
-      "endTime": 1790513552015.341,
+      "startTime": 1790517897309,
+      "endTime": 1790517897319.376,
       "status": "passed",
       "message": "",
       "name": "<project>/tests/trace.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "developer workbench output"
+          ],
+          "fullName": "developer workbench output shows status and exact nested JSON differences",
+          "status": "passed",
+          "title": "shows status and exact nested JSON differences",
+          "duration": 1.494166000000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "developer workbench output"
+          ],
+          "fullName": "developer workbench output does not invent a difference for the same response",
+          "status": "passed",
+          "title": "does not invent a difference for the same response",
+          "duration": 0.11991699999998673,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "developer workbench output"
+          ],
+          "fullName": "developer workbench output escapes titles and paths in generated tests and asserts the expected contract",
+          "status": "passed",
+          "title": "escapes titles and paths in generated tests and asserts the expected contract",
+          "duration": 0.2946659999999781,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "developer workbench output"
+          ],
+          "fullName": "developer workbench output rejects an external URL as an endpoint",
+          "status": "passed",
+          "title": "rejects an external URL as an endpoint",
+          "duration": 0.45795900000001666,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1790517897306,
+      "endTime": 1790517897308.458,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/workbench.test.ts"
     }
   ]
 }

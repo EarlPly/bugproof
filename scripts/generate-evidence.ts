@@ -105,7 +105,7 @@ try {
       bobContribution: "Bob IDE authored the inventory investigation, regression tests, repair, and explanatory replay logic with boundary tests. See docs/bob-investigation.md and bob_sessions for session evidence. Website and evidence tooling are assistant-authored.",
       sessionEvidence,
       limitations: [
-        "Synthetic, intentionally seeded inventory defect; each demonstration starts with five units.",
+        "Sample, intentionally introduced inventory defect; each demonstration starts with five units.",
         "Original failures against the independent expectations are expected evidence of the defect, not a successful production implementation.",
         "The original fixture can produce non-finite numbers; these are serialized as strings such as NaN. Runtime string/boolean values are preserved.",
         "Recorded local verification; the public website does not invoke Bob or execute uploaded code.",
